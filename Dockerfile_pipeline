@@ -1,0 +1,9 @@
+FROM kestr3l/stable-diffusion-webui:1.2.2 as build
+
+WORKDIR /home/user/
+RUN mkdir kohya_ss
+COPY ./ ./kohta_ss
+
+WORKDIR /home/user/kohya_ss
+RUN ls -la
+RUN bash ./setup.sh

@@ -1,4 +1,4 @@
-all: web confd cron consumer
+all: setup
 
-confd:
+setup:
 	sh ./setup.sh
